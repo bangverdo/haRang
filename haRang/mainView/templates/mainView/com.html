@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Gugi&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5;url=/mainView/">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'icon2.png' %}">
+    <title>하랑</title>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0px 0px;
+        }
+        .contentBox{
+            display:table;
+            table-layout:fixed;
+            width:100%;
+            height:100%;
+            background:#b0fff5;
+            text-align:center;
+          }
+        .contentBox_item{
+            display:table-cell;
+            vertical-align:middle;
+          }
+        .x {
+            width: 20%;
+            height: auto;
+            vertical-align: bottom;
+            margin: 0px 0px;
+        }
+        .y {
+            width: 10%;
+            height: auto;
+            margin: 0px 0px;
+        }
+
+        h2 {
+            font-family: 'Gugi', cursive;
+            font-weight: 200;
+            font-size: 60px;
+            vertical-align: top;
+            margin: 0px 0px;
+        }
+
+        p {
+            font-family: 'Diphylleia', serif;
+            font-weight: 600;
+            font-size 30px;
+            margin: 0px 0px;
+        }
+
+        .khhs {
+            position:absolute; 
+            bottom:0px;
+            text-align:center;
+        }
+
+        .bottom {
+            text-align:center;
+        }
+
+        @media screen and (max-width: 750px){
+            .x {
+                width: 30%;
+                height: auto;
+                vertical-align: bottom;
+                margin: 0px 0px;
+            }
+            .y {
+                width: 12%;
+                height: auto;
+                margin: 20px 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contentBox">
+        <div class="contentBox_item">
+            <img class="x" src="{% static 'icon.png' %}" alt="">
+            <h2>예약완료</h2>
+            <p>모두가 편한 대중교통 이용 플랫폼 [하랑]</p>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="khhs">
+            <img class="y" src="{% static 'lion.png' %}" alt="">
+        </div>
+    </div>
+</body>
+</html>
