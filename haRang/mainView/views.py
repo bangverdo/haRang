@@ -16,7 +16,7 @@ def com(request):
 def res(request):
     if request.method == 'POST':
         st = request.POST['station']
-        params ={'serviceKey' : '66p/4eKoNq1jRZNB006GUJHwQl5W0siU+hVT3usdjO+Z/ZKMkVPegS/fGPifbNafCbD+kP8NgLkuXGfzC6p6Kg==', 'stId' : st}
+        params ={'serviceKey' : 'api키를 넣으시면 됩니다', 'stId' : st}
         response = requests.get(url, params=params)
         soup = bs(response.text, "xml")
         Bus.objects.all().delete()
